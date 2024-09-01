@@ -19,14 +19,14 @@ build-backend = "setuptools.build_meta"  # If not defined, then legacy behavior 
 # package, this name will be registered for you. It will determine how
 # users can install this project, e.g.:
 #
-# $ pip install samba-ad-rest
+# $ pip install samba-ad-rest-api
 #
-# And where it will live on PyPI: https://pypi.org/project/samba-ad-rest/
+# And where it will live on PyPI: https://pypi.org/project/samba-ad-rest-api/
 #
 # There are some restrictions on what makes a valid project name
 # specification here:
 # https://packaging.python.org/specifications/core-metadata/#name
-name = "samba-ad-rest"  # REQUIRED, is the only field that cannot be marked as dynamic.
+name = "samba-ad-rest-api"  # REQUIRED, is the only field that cannot be marked as dynamic.
 
 # Versions should comply with PEP 440:
 # https://www.python.org/dev/peps/pep-0440/
@@ -160,7 +160,7 @@ pythonpath = [
 # The following would provide a command line executable called `sample`
 # which executes the function `main` from this package when invoked.
 [project.scripts]
-samba-ad-rest = "ad:main"
+samba-ad-rest-api = "samba_ad_rest_api.cli:main"
 
 
 # # This is configuration specific to the `setuptools` build backend.

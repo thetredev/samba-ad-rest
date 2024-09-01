@@ -1,4 +1,4 @@
-from ad.api.utils import register_endpoint_router
+from samba_ad_rest_api.api.utils import register_endpoint_router
 
 
 router = register_endpoint_router(__name__)

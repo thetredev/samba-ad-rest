@@ -7,7 +7,7 @@ clean:
 build: clean
 	@python3 -m venv .venv
 	@. .venv/bin/activate
-	@pip install samba-ad-rest[dev]
+	@pip install samba-ad-rest-api[dev]
 	@python3 -m build
 
 install: build

@@ -2,8 +2,8 @@ import shutil
 import sys
 from pathlib import Path
 
-import ad.entry
-from ad.messages import panic
+from samba_ad_rest_api.entry import main as ad_main
+from samba_ad_rest_api.messages import panic
 
 
 def main():
@@ -17,4 +17,4 @@ def main():
     if not config_path.exists():
         panic(f"Config file {config_path.as_posix()} does not exist", 1)
 
-    ad.entry.main(config_path)
+    ad_main(config_path)

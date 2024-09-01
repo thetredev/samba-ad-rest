@@ -1,7 +1,7 @@
 import sys
 
-from ad.constants import ERROR_PREFIX
-from ad.constants import MESSAGE_PREFIX
+from samba_ad_rest_api.constants import ERROR_PREFIX
+from samba_ad_rest_api.constants import MESSAGE_PREFIX
 
 
 def panic(text: str, exit_code: int):
