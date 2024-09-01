@@ -133,7 +133,12 @@ dependencies = [
 # https://packaging.python.org/en/latest/specifications/dependency-specifiers/#extras
 [project.optional-dependencies]
 dev = ["check-manifest"]
-test = ["coverage"]
+test = ["pytest", "pytest-order", "coverage"]
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
+]
 
 # List URLs that are relevant to your project
 #
